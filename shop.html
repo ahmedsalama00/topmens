@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop Top Men's luxury collection — premium watches, fragrances, cufflinks, fashion and accessories for the modern gentleman.">
+    <title>Shop — Top Men's House of Luxury</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">&#xFE3F;&#xFE3F;</span>
+                <span class="logo-text">Top Men's</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="shop.html" class="nav-link active">Shop</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="cart-btn" id="cartBtn" aria-label="Shopping cart">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Shop Hero -->
+    <section class="shop-hero">
+        <div class="shop-hero-bg">
+            <img src="2.jpeg" alt="Top Men's luxury collection">
+            <div class="shop-hero-overlay"></div>
+        </div>
+        <div class="shop-hero-content">
+            <span class="section-label">The Collection</span>
+            <h1 class="shop-hero-title">Shop <em>Luxury</em></h1>
+            <p class="shop-hero-desc">Discover our curated selection of premium men's accessories, timepieces, fragrances, and bespoke fashion.</p>
+        </div>
+    </section>
+
+    <!-- Filter Bar -->
+    <div class="filter-section">
+        <div class="container">
+            <div class="filter-bar">
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all">All</button>
+                    <button class="filter-tab" data-filter="watches">Watches</button>
+                    <button class="filter-tab" data-filter="fragrances">Fragrances</button>
+                    <button class="filter-tab" data-filter="cufflinks">Cufflinks</button>
+                    <button class="filter-tab" data-filter="fashion">Fashion</button>
+                    <button class="filter-tab" data-filter="accessories">Accessories</button>
+                </div>
+                <div class="filter-actions">
+                    <div class="search-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                        <input type="text" id="searchInput" placeholder="Search products...">
+                    </div>
+                    <select id="sortSelect" class="sort-select">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="name">Name: A—Z</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Products Grid -->
+    <section class="shop-section">
+        <div class="container">
+            <div class="results-info">
+                <span id="resultsCount">Showing 12 products</span>
+            </div>
+            <div class="shop-grid" id="shopGrid">
+
+                <!-- Product 1 -->
+                <div class="shop-card" data-category="watches" data-price="14500" data-name="Rolex Submariner Date">
+                    <div class="shop-card-image">
+                        <img src="images/watch_rolex.png" alt="Rolex Submariner Date" loading="lazy">
+                        <div class="shop-card-actions">
+                            <button class="action-btn quick-view-btn" data-product="0" aria-label="Quick view">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                            </button>
+                            <button class="action-btn add-to-cart-btn" aria-label="Add to cart">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                            </button>
+                        </div>
+                        <span class="shop-badge">Bestseller</span>
+                    </div>
+                    <div class="shop-card-info">
+                        <span class="shop-brand">Rolex</span>
+                        <h3 class="shop-name">Submariner Date</h3>
+                        <p class="shop-desc">41mm, Oystersteel and yellow gold, black dial</p>
+                        <div class="shop-card-bottom">
+                            <span class="shop-price">$14,500</span>
+                            <button class="btn btn-sm btn-gold add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="shop-card" data-category="fragrances" data-price="395" data-name="Tom Ford Oud Wood">
+                    <div class="shop-card-image">
+                        <img src="images/perfume_luxury.png" alt="Tom Ford Oud Wood EDP" loading="lazy">
+                        <div class="shop-card-actions">
+                            <button class="action-btn quick-view-btn" data-product="1" aria-label="Quick view">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                            </button>
+                            <button class="action-btn add-to-cart-btn" aria-label="Add to cart">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                            </button>
+                        </div>
+                        <span class="shop-badge new">New</span>
+                    </div>
+                    <div class="shop-card-info">
+                        <span class="shop-brand">Tom Ford</span>
+                        <h3 class="shop-name">Oud Wood EDP</h3>
+                        <p class="shop-desc">100ml, Private Blend Collection</p>
+                        <div class="shop-card-bottom">
+                            <span class="shop-price">$395</span>
+                            <button class="btn btn-sm btn-gold add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="shop-card" data-category="cufflinks" data-price="1250" data-name="Montblanc Star Gold Cufflinks">
+                    <div class="shop-card-image">
+                        <img src="images/cufflinks_luxury.png" alt="Montblanc Star Gold Cufflinks" loading="lazy">
+                        <div class="shop-card-actions">
+                            <button class="action-btn quick-view-btn" data-product="2" aria-label="Quick view">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                            </button>
+                            <button class="action-btn add-to-cart-btn" aria-label="Add to cart">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="shop-card-info">
+                        <span class="shop-brand">Montblanc</span>
+                        <h3 class="shop-name">Star Gold Cufflinks</h3>
+                        <p class="shop-desc">18K gold with onyx inlay, handcrafted</p>
+                        <div class="shop-card-bottom">
+                            <span class="shop-price">$1,250</span>
+                            <button class="btn btn-sm btn-gold add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="shop-card" data-category="fashion" data-price="7800" data-name="Brioni Bespoke Tuxedo">
+                    <div class="shop-card-image">
+                        <img src="images/suit_luxury.png" alt="Brioni Bespoke Tuxedo" loading="lazy">
+                        <div class="shop-card-actions">
+                            <button class="action-btn quick-view-btn" data-product="3" aria-label="Quick view">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                            </button>
+                            <button class="action-btn add-to-cart-btn" aria-label="Add to cart">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                            </button>
+                        </div>
+                        <span class="shop-badge">Exclusive</span>
+                    </div>
+                    <div class="shop-card-info">
+                        <span class="shop-brand">Brioni</span>
+                        <h3 class="shop-name">Bespoke Tuxedo</h3>
+                        <p class="shop-desc">Super 180s wool, midnight blue, Italian tailored</p>
+                        <div class="shop-card-bottom">
+                            <span class="shop-price">$7,800</span>
+                            <button class="btn btn-sm btn-gold add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="shop-card" data-category="watches" data-price="9200" data-name="Patek Philippe Calatrava">
+                    <div class="shop-card-image">
+                        <img src="images/watch_silver.png" alt="Patek Philippe Calatrava" loading="lazy">
+                        <div class="shop-card-actions">
+                            <button class="action-btn quick-view-btn" data-product="4" aria-label="Quick view">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                            </button>
+                            <button class="action-btn add-to-cart-btn" aria-label="Add to cart">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="shop-card-info">
+                        <span class="shop-brand">Patek Philippe</span>
+                        <h3 class="shop-name">Calatrava 5227G</h3>
+                        <p class="shop-desc">39mm white gold, officer's caseback</p>
+                        <div class="shop-card-bottom">
+                            <span class="shop-price">$9,200</span>
+                            <button class="btn btn-sm btn-gold add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="shop-card" data-category="accessories" data-price="850" data-name="Berluti Venezia Wallet">
+                    <div class="shop-card-image">
+                        <img src="images/wallet_leather.png" alt="Berluti Venezia Leather Wallet" loading="lazy">
+                        <div class="shop-card-actions">
+                            <button class="action-btn quick-view-btn" data-product="5" aria-label="Quick view">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                            </button>
+                            <button class="action-btn add-to-cart-btn" aria-label="Add to cart">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="shop-card-info">
+                        <span class="shop-brand">Berluti</span>
+                        <h3 class="shop-name">Venezia Leather Wallet</h3>
+                        <p class="shop-desc">Venezia calfskin, hand-patinated</p>
+                        <div class="shop-card-bottom">
+                            <span class="shop-price">$850</span>
+                            <button class="btn btn-sm btn-gold add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="shop-card" data-category="accessories" data-price="620" data-name="Cartier Aviator Sunglasses">
+                    <div class="shop-card-image">
+                        <img src="images/sunglasses_luxury.png" alt="Cartier Aviator Sunglasses" loading="lazy">
+                        <div class="shop-card-actions">
+                            <button class="action-btn quick-view-btn" data-product="6" aria-label="Quick view">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                            </button>
+                            <button class="action-btn add-to-cart-btn" aria-label="Add to cart">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                            </button>
+                        </div>
+                        <span class="shop-badge new">New</span>
+                    </div>
+                    <div class="shop-card-info">
+                        <span class="shop-brand">Cartier</span>
+                        <h3 class="shop-name">Santos Aviator Sunglasses</h3>
+                        <p class="shop-desc">Gold-finish metal, grey polarized lenses</p>
+                        <div class="shop-card-bottom">
+                            <span class="shop-price">$620</span>
+                            <button class="btn btn-sm btn-gold add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="shop-card" data-category="fragrances" data-price="475" data-name="Creed Aventus">
+                    <div class="shop-card-image">
+                        <img src="images/perfume_luxury.png" alt="Creed Aventus EDP" loading="lazy">
+                        <div class="shop-card-actions">
+                            <button class="action-btn quick-view-btn" data-product="7" aria-label="Quick view">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                            </button>
+                            <button class="action-btn add-to-cart-btn" aria-label="Add to cart">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                            </button>
+                        </div>
+                        <span class="shop-badge">Bestseller</span>
+                    </div>
+                    <div class="shop-card-info">
+                        <span class="shop-brand">Creed</span>
+                        <h3 class="shop-name">Aventus EDP</h3>
+                        <p class="shop-desc">100ml, legendary masculine scent</p>
+                        <div class="shop-card-bottom">
+                            <span class="shop-price">$475</span>
+                            <button class="btn btn-sm btn-gold add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="shop-card" data-category="watches" data-price="22500" data-name="Audemars Piguet Royal Oak">
+                    <div class="shop-card-image">
+                        <img src="images/watch_rolex.png" alt="Audemars Piguet Royal Oak" loading="lazy">
+                        <div class="shop-card-actions">
+                            <button class="action-btn quick-view-btn" data-product="8" aria-label="Quick view">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                            </button>
+                            <button class="action-btn add-to-cart-btn" aria-label="Add to cart">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                            </button>
+                        </div>
+                        <span class="shop-badge">Exclusive</span>
+                    </div>
+                    <div class="shop-card-info">
+                        <span class="shop-brand">Audemars Piguet</span>
+                        <h3 class="shop-name">Royal Oak 15500ST</h3>
+                        <p class="shop-desc">41mm, stainless steel, blue dial</p>
+                        <div class="shop-card-bottom">
+                            <span class="shop-price">$22,500</span>
+                            <button class="btn btn-sm btn-gold add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="shop-card" data-category="cufflinks" data-price="2100" data-name="Cartier Trinity Cufflinks">
+                    <div class="shop-card-image">
+                        <img src="images/cufflinks_luxury.png" alt="Cartier Trinity Cufflinks" loading="lazy">
+                        <div class="shop-card-actions">
+                            <button class="action-btn quick-view-btn" data-product="9" aria-label="Quick view">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                            </button>
+                            <button class="action-btn add-to-cart-btn" aria-label="Add to cart">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="shop-card-info">
+                        <span class="shop-brand">Cartier</span>
+                        <h3 class="shop-name">Trinity Cufflinks</h3>
+                        <p class="shop-desc">Three-tone gold, iconic interlocking design</p>
+                        <div class="shop-card-bottom">
+                            <span class="shop-price">$2,100</span>
+                            <button class="btn btn-sm btn-gold add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 11 -->
+                <div class="shop-card" data-category="fashion" data-price="3200" data-name="Tom Ford Shelton Suit">
+                    <div class="shop-card-image">
+                        <img src="images/suit_luxury.png" alt="Tom Ford Shelton Suit" loading="lazy">
+                        <div class="shop-card-actions">
+                            <button class="action-btn quick-view-btn" data-product="10" aria-label="Quick view">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                            </button>
+                            <button class="action-btn add-to-cart-btn" aria-label="Add to cart">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="shop-card-info">
+                        <span class="shop-brand">Tom Ford</span>
+                        <h3 class="shop-name">Shelton Suit</h3>
+                        <p class="shop-desc">Wool-silk blend, charcoal grey, slim fit</p>
+                        <div class="shop-card-bottom">
+                            <span class="shop-price">$3,200</span>
+                            <button class="btn btn-sm btn-gold add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 12 -->
+                <div class="shop-card" data-category="fragrances" data-price="320" data-name="MFK Baccarat Rouge 540">
+                    <div class="shop-card-image">
+                        <img src="images/perfume_luxury.png" alt="MFK Baccarat Rouge 540" loading="lazy">
+                        <div class="shop-card-actions">
+                            <button class="action-btn quick-view-btn" data-product="11" aria-label="Quick view">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                            </button>
+                            <button class="action-btn add-to-cart-btn" aria-label="Add to cart">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="shop-card-info">
+                        <span class="shop-brand">Maison Francis Kurkdjian</span>
+                        <h3 class="shop-name">Baccarat Rouge 540</h3>
+                        <p class="shop-desc">70ml EDP, saffron, jasmine, amberwood</p>
+                        <div class="shop-card-bottom">
+                            <span class="shop-price">$320</span>
+                            <button class="btn btn-sm btn-gold add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- No Results -->
+            <div class="no-results" id="noResults" style="display:none;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <h3>No products found</h3>
+                <p>Try adjusting your filters or search term.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick View Modal -->
+    <div class="modal-overlay" id="quickViewModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-grid">
+                <div class="modal-image">
+                    <img id="modalImg" src="" alt="Product">
+                </div>
+                <div class="modal-info">
+                    <span class="shop-brand" id="modalBrand"></span>
+                    <h2 class="modal-title" id="modalName"></h2>
+                    <p class="modal-desc" id="modalDesc"></p>
+                    <div class="modal-price" id="modalPrice"></div>
+                    <div class="modal-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Availability</span>
+                            <span class="detail-value in-stock">In Stock</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Shipping</span>
+                            <span class="detail-value">Free worldwide delivery</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Authenticity</span>
+                            <span class="detail-value">100% Guaranteed</span>
+                        </div>
+                    </div>
+                    <div class="modal-qty">
+                        <label>Quantity</label>
+                        <div class="qty-control">
+                            <button class="qty-btn" id="qtyMinus">−</button>
+                            <input type="number" id="qtyInput" value="1" min="1" max="10">
+                            <button class="qty-btn" id="qtyPlus">+</button>
+                        </div>
+                    </div>
+                    <button class="btn btn-gold btn-full modal-add-btn" id="modalAddBtn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="cart-close" id="cartClose">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="cart-empty" id="cartEmpty">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                <p>Your cart is empty</p>
+                <span>Browse our collections to find something special.</span>
+            </div>
+        </div>
+        <div class="cart-footer" id="cartFooter" style="display:none;">
+            <div class="cart-subtotal">
+                <span>Subtotal</span>
+                <span id="cartSubtotal">$0</span>
+            </div>
+            <p class="cart-shipping">Free worldwide shipping on all orders</p>
+            <button class="btn btn-gold btn-full" id="checkoutBtn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        <span id="toastText">Added to cart</span>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <span class="logo-icon">&#xFE3F;&#xFE3F;</span>
+                    <span class="logo-text">Top Men's</span>
+                    <p>House of Luxury</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Navigation</h4>
+                        <a href="index.html">Home</a>
+                        <a href="shop.html">Shop</a>
+                        <a href="index.html#about">About</a>
+                        <a href="index.html#contact">Contact</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Collections</h4>
+                        <a href="#">Timepieces</a>
+                        <a href="#">Fragrances</a>
+                        <a href="#">Cufflinks</a>
+                        <a href="#">Fashion</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Legal</h4>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Returns</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Top Men's — House of Luxury. All rights reserved.</p>
+                <p>Owner: Ahmed Salama</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <script src="shop.js"></script>
+</body>
+</html>
