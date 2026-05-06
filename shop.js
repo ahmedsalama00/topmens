@@ -1,7 +1,3 @@
-/* ============================================
-   SHOP PAGE — TOP MEN'S
-   E-Commerce Functionality
-   ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
 
