@@ -1,8 +1,3 @@
-/* ============================================
-   TOP MEN'S — HOUSE OF LUXURY
-   Interactive Scripts
-   ============================================ */
-
 document.addEventListener('DOMContentLoaded', () => {
 
     // ─── Preloader ───
